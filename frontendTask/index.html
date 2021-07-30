@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mushoor</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div class="box">
+        <img src="images/mushroom.jpg" alt="">
+        <h1>Fly Agaric</h1>
+        <h4>Credit: Ivan Kmit / Alamy Stock Photo</h4>
+        <hr>
+        <p>Traditionally used as an insecticide, the cap was broken up and sprinkled into saucers of milk.
+        <b>Fly agaric</b> is now known to contain ibotenic acid, which both attracts and kills flies.<br>
+        <b>Key features:</b> probably our most familiar toadstool, with a brilliant scarlet or orange cap covered with white, wart-like spots. Underneath the cap, the gills are white.
+            The white stem has a floppy ring and a bulbous base surrounded by fleecy bands. Up to 20cm across and 30cm tall.<br><br>
+        <b>Where to look:</b> on light soils in mixed woodland and heaths among birch, pine and spruce. Late summer to the first frosts of winter.
+        <br><br><b>Identification:</b> They are generally bright red with white “warts.” These are the remnants of the universal veil. The red color of the cap can fade with age. Some subspecies are more yellow to almost white. Gills: The gills are free and white.
+        <br><br><b>Size:</b> Fly agaric has a bright red cap with white spots and white gills. It can grow to 20cm across and 30cm tall and has a savoury smell.
+        <br><br><b>Varieties:</b>
+        <br>
+        </p>
+        <table>
+            <tr>
+              <th>Reference name</th>
+              <th>Common name</th>
+            </tr>
+            <tr>
+              <td>Amanita muscaria var. muscaria</td>
+              <td>Euro-Asian fly agaric</td>
+            </tr>
+            <tr>
+              <td>Amanita muscaria var. flavivolvata</td>
+              <td>American fly agaric</td>
+            </tr>
+          </table>
+        <a href="javascript:void();" class="readmore-btn">Read More</a>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(".readmore-btn").on('click', function(){
+            $(this).parent().toggleClass("showContent");
+            var replaceText = $(this).parent().hasClass("showContent") ? "Read Less" : "Read More";
+            $(this).text(replaceText);
+        });
+    </script>
+</body>
+</html>
